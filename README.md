@@ -1,4 +1,23 @@
 # rcraps
+Golang
+```golang
+package main
+import (
+  "fmt"
+)
+
+func main() {
+  var adj = [2]string{"big", "tasty"}
+  var fruits = [3]string{"apple", "orange", "banana"}
+  for i:=0; i < len(adj); i++ {
+    for j:=0; j < len(fruits); j++ {
+      fmt.Println(adj[i],fruits[j])
+    }
+  }
+}
+```
+
+TypeScript
 ```typescript
 type FixedSizeArray<N extends number, T, M extends string = '0'> = {
     readonly [k in M]: any;
@@ -8,7 +27,7 @@ type FixedSizeArray<N extends number, T, M extends string = '0'> = {
 let adj: FixedSizeArray<2, string>;
 adj = ["big", "tasty"];
 let fruits: FixedSizeArray<3, string>;
-fruits = ["orange", "apple", "banana"];
+fruits = ["apple", "orange", "banana"];
 let i: number;
 let j: number;
 
